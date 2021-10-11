@@ -31,6 +31,7 @@ class MainPage(BasePage):
 
         element = self.driver.find_element(*MainPageLocators.TEXT_ITEM)
         element.click()
+        # Some wait to verify that the pages loads after the click
         WebDriverWait(self.driver, 20).until(
             expected_conditions.presence_of_element_located(MainPageLocators.TEXT_TITLE))
 

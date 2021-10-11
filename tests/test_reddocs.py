@@ -4,6 +4,7 @@ from util import verify_duplicated
 
 
 def test_get_text(driver):
+    """ Test 01 - Open the Page make a click and validates """
     page = main.MainPage(driver)
     page.open_page()
     assert page.verify_page_title()
